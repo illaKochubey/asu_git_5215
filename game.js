@@ -583,7 +583,7 @@ Bullet = function () {
   this.draw = function () {
     if (this.visible) {
       this.context.save();
-      this.context.lineWidth = 2;
+      this.context.lineWidth = 5;
       this.context.beginPath();
       this.context.moveTo(this.x-1, this.y-1);
       this.context.lineTo(this.x+1, this.y+1);
@@ -932,7 +932,7 @@ Game = {
       }
 
       Game.score = 0;
-      Game.lives = 2;
+      Game.lives = 680;
       Game.totalAsteroids = 2;
       Game.spawnAsteroids();
 
